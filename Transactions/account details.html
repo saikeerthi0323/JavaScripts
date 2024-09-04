@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+         body {
+    background-image: url('./img1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Account Details</h4>
+                </div>
+                <div class="card-body text-center">
+                    <img src="transaction images/account.jpeg" alt="Profile Picture" class="profile-img mb-3">
+                    <h5>Sai Keerthi</h5>
+                    <p>Email: ammu0323@gmail.com</p>
+                    <p>Username: Sai Keerthi Surapureddi</p>
+                    <p>Account Number: 1234567890</p>
+                    <p>IFSCCode: SBN123</p>
+                    <a href="editing.html" class="btn btn-warning">Edit Details</a>
+                    <a href="login.html" class="btn btn-danger">Logout</a>
+                    <a href="credit and debit.html" class="btn btn-success">Money Transfer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script>
+     document.getElementById('Logging out').addEventListener('Logging out', function(event) {
+        event.preventDefault();
+        alert('Logging out...');
+        // Implement form submission logic here, e.g., send data to backend
+        window.location.href = 'login.html'; // Redirect back to account details page after saving
+    });
+</script>
+
+</body>
+</html>

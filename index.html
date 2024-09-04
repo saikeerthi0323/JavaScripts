@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-image: url('./Transactions/img1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+        .custom-container {
+            background-color: white;
+            border: 6px solid pink;
+            padding: 20px;
+            margin: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .custom-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .row {
+            margin: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="custom-container">
+                    <h3>Banking</h3>
+                    <img src="Transactions/transaction images/transaction.jpg" alt="account details" width="180" height="150"></br></br>
+                    <p><a href="Transactions/login.html" class="btn btn-primary">Banking</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-container">
+                    <h3>API Calling</h3>
+                    <img src="./Transactions/transaction images/api.jpg" width="180" height="150"></br></br>
+                    <p><a href="api calling/api calling.html" class="btn btn-primary">API Calling</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="custom-container">
+                    <h3>Shopping</h3>
+                    <img src="Transactions/transaction images/shopping.jpeg" alt="Dresses" width="180" height="150"></br></br>
+                    <p><a href="shoppings/shopping.html" class="btn btn-primary">Shopping</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

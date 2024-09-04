@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Account Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+    background-image: url('./img1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Edit Account Details</h4>
+                </div>
+                <div class="card-body">
+                    <form id="editDetailsForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" value="Sai Keerthi">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" value="ammu0323@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" value="Sai Keerthi Surapureddi">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Account Number</label>
+                            <input type="num" class="form-control" id="number" value="1234567890">
+                        </div>
+                        <div class="form-group">
+                            <label for="IFSCCode">Code</label>
+                            <input type="code" class="form-control" id="code" value="SBN123">
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block">Save Changes</button>
+                        <a href="account details.html" class="btn btn-info btn-block">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script>
+    document.getElementById('editDetailsForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Details saved successfully!');
+        // Implement form submission logic here, e.g., send data to backend
+        window.location.href = 'account details.html'; // Redirect back to account details page after saving
+    });
+</script>
+
+</body>
+</html>
